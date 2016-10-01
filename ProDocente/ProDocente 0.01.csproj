@@ -1,0 +1,342 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{949029BA-EB58-4152-9082-18F3C4F4D5D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProDocente</RootNamespace>
+    <AssemblyName>ProDocente</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\10.2.3600.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.2.3600.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\CrystalDecisions.Shared\10.2.3600.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dominio\CActividad.cs" />
+    <Compile Include="dominio\CAsignatura.cs" />
+    <Compile Include="dominio\CConocimiento.cs" />
+    <Compile Include="dominio\CDisciplina.cs" />
+    <Compile Include="dominio\CEstudiante.cs" />
+    <Compile Include="dominio\CEvaluacionEstudiante.cs" />
+    <Compile Include="dominio\CEvaluación.cs" />
+    <Compile Include="dominio\CGrupo.cs" />
+    <Compile Include="dominio\CHabilidad.cs" />
+    <Compile Include="dominio\CInstitucionN.cs" />
+    <Compile Include="dominio\CInstitución.cs" />
+    <Compile Include="dominio\CPersona.cs" />
+    <Compile Include="dominio\CResultadoHabilidadEvaluada.cs" />
+    <Compile Include="dominio\CTema.cs" />
+    <Compile Include="dominio\CTipoActividad.cs" />
+    <Compile Include="dominio\CTipoAsistencia.cs" />
+    <Compile Include="dominio\CTipoEvaluacion.cs" />
+    <Compile Include="dominio\CTipoResultado.cs" />
+    <Compile Include="dominio\CEstud_Actividad.cs" />
+    <Compile Include="fichero\CFichero.cs" />
+    <Compile Include="Reporte\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="visual\Agrupar Asignaturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Agrupar Asignaturas.Designer.cs">
+      <DependentUpon>Agrupar Asignaturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Asistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Asistencia.Designer.cs">
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Asociar_EvaluacionActividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Asociar_EvaluacionActividad.Designer.cs">
+      <DependentUpon>Asociar_EvaluacionActividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\CrearGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\CrearGrupo.Designer.cs">
+      <DependentUpon>CrearGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\EvaluacionesEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\EvaluacionesEstudiante.Designer.cs">
+      <DependentUpon>EvaluacionesEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\EvaluarHabilidadEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\EvaluarHabilidadEstudiante.Designer.cs">
+      <DependentUpon>EvaluarHabilidadEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Agrupar Asignaturas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Agrupar Asignaturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Asistencia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Asociar_EvaluacionActividad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Asociar_EvaluacionActividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\CrearGrupo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CrearGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\EvaluacionesEstudiante.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EvaluacionesEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\EvaluarHabilidadEstudiante.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EvaluarHabilidadEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Insertar Actividad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Insertar Actividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Insertar Asignaturas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Insertar Asignaturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Insertar Habilidad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Insertar Habilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\InsertarEstudiante.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InsertarEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\InsertarEvaluacion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InsertarEvaluacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\InsertarTemaAsignatura.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InsertarTemaAsignatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Listar Asignaturas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Listar Asignaturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\ListarEstudiantes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListarEstudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\RegistrarEvaluacion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RegistrarEvaluacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\RegistrarEvaluacionPorEstudiante.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RegistrarEvaluacionPorEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Registro Asistencia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Registro Asistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Tipo de Asistencia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tipo de Asistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Tipo de Resultado.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tipo de Resultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Tipos de Actividad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tipos de Actividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Tipos de Evaluacion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tipos de Evaluacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\DataSources\ProDocente.dominio.CTipoAsistencia.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="visual\Insertar Actividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Insertar Actividad.Designer.cs">
+      <DependentUpon>Insertar Actividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Insertar Asignaturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Insertar Asignaturas.Designer.cs">
+      <DependentUpon>Insertar Asignaturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Insertar Habilidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Insertar Habilidad.Designer.cs">
+      <DependentUpon>Insertar Habilidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\InsertarEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\InsertarEstudiante.Designer.cs">
+      <DependentUpon>InsertarEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\InsertarEvaluacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\InsertarEvaluacion.Designer.cs">
+      <DependentUpon>InsertarEvaluacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\InsertarTemaAsignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\InsertarTemaAsignatura.Designer.cs">
+      <DependentUpon>InsertarTemaAsignatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Listar Asignaturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Listar Asignaturas.Designer.cs">
+      <DependentUpon>Listar Asignaturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\ListarEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\ListarEstudiantes.Designer.cs">
+      <DependentUpon>ListarEstudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\RegistrarEvaluacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\RegistrarEvaluacion.Designer.cs">
+      <DependentUpon>RegistrarEvaluacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\RegistrarEvaluacionPorEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\RegistrarEvaluacionPorEstudiante.Designer.cs">
+      <DependentUpon>RegistrarEvaluacionPorEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Registro Asistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Registro Asistencia.Designer.cs">
+      <DependentUpon>Registro Asistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Tipo de Asistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Tipo de Asistencia.Designer.cs">
+      <DependentUpon>Tipo de Asistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Tipo de Resultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Tipo de Resultado.Designer.cs">
+      <DependentUpon>Tipo de Resultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Tipos de Actividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Tipos de Actividad.Designer.cs">
+      <DependentUpon>Tipos de Actividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Tipos de Evaluacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Tipos de Evaluacion.Designer.cs">
+      <DependentUpon>Tipos de Evaluacion.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

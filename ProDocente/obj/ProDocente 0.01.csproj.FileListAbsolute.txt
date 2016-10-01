@@ -1,0 +1,32 @@
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\bin\Debug\ProDocente.exe
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\bin\Debug\ProDocente.pdb
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.Reporte.CrystalReport1.rpt
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.Properties.Resources.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.Agrupar_Asignaturas.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.Asistencia.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.CrearGrupo.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.EvaluacionesEstudiante.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.EvaluarHabilidadEstudiante.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.Form1.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.Insertar_Actividad.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.Insertar_Asignaturas.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.Insertar_Habilidad.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.InsertarEstudiante.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.InsertarEvaluacion.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.InsertarTemaAsignatura.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.Listar_Asignaturas.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.ListarEstudiantes.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.RegistrarEvaluacion.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.Registro_Asistencia.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.Tipo_de_Asistencia.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.Tipo_de_Resultado.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.Tipos_de_Actividad.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.Tipos_de_Evaluacion.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente 0.01.csproj.GenerateResource.Cache
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.exe
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.pdb
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.Asociar_EvaluacionActividad.resources
+C:\Users\Eduardo\Documents\Visual Studio 2005\Projects\ProDocente\ProDocente\obj\Debug\ProDocente.visual.RegistrarEvaluacionPorEstudiante.resources
+E:\Trabajo\Docencia\ProDocente-Versiones-Desarrollo\ProDocente 0.01\ProDocente\obj\Debug\ProDocente.exe
+E:\Trabajo\Docencia\ProDocente-Versiones-Desarrollo\ProDocente 0.01\ProDocente\obj\Debug\ProDocente.pdb
